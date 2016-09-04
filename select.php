@@ -1,5 +1,12 @@
 <?php
 
+/*
+if (isset($_SESSION['login'] != true)) {
+
+
+	header('Location:admin.php');
+}
+*/
 include "db.php";
 
 $news1 = new news("localhost","root","","connect");
@@ -67,3 +74,11 @@ $query = $news1->select("news");
 </div>
 </body>
 </html>
+<?php
+/*if (isset($_SESSION['login'] != true)) {
+
+
+	header('Location:admin.php');
+}*/
+
+?>
